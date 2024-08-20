@@ -22,8 +22,8 @@ This project requires Python 3.x and the following libraries:
 - keyboard
 - numpy
 
-Download the dlib pre-trained facial landmark predictor available at dlib.net
-Uncompress the file and store the .dat file in the same dir as blink_morse.py
+Download the dlib pre-trained facial landmark predictor available at dlib.net.
+Uncompress the file and store the .dat file in the same dir as blink_morse.py.
 You can install the required packages using the provided `requirements.txt` file:
 
 ```pip install -r requirements.txt```
@@ -48,6 +48,20 @@ You can install the required packages using the provided `requirements.txt` file
 3. Blink duration is used to differentiate between dots and dashes
 4. The resulting Morse code is translated into text
 5. Output is displayed on screen and typed automatically
+
+## Eye Aspect Ratio (EAR)
+
+The Eye Aspect Ratio (EAR) is a crucial concept in this project, used to detect eye blinks. It's calculated using the landmarks of the eye:
+
+1. We locate 6 facial landmarks around each eye.
+2. EAR is computed using the distances between these points:
+
+   EAR = (||p2-p6|| + ||p3-p5||) / (2 * ||p1-p4||)
+
+   Where p1, ..., p6 are the 2D landmark locations.
+
+3. The EAR of an open eye is larger than that of a closed eye.
+4. By setting a threshold, we can determine if an eye is open or closed.
 
 ## Configuration
 
