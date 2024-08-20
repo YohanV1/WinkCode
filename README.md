@@ -22,6 +22,8 @@ This project requires Python 3.x and the following libraries:
 - keyboard
 - numpy
 
+Download the dlib pre-trained facial landmark predictor available at dlib.net
+Uncompress the file and store the .dat file in the same dir as blink_morse.py
 You can install the required packages using the provided `requirements.txt` file:
 
 ```pip install -r requirements.txt```
