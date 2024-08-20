@@ -2,9 +2,7 @@
 
 WinkCode is a project that translates eye blinks into Morse code and then decodes it into text. This system uses computer vision techniques to detect eye blinks in real-time video, interprets them as Morse code signals, and converts them into readable text.
 
-![WinkCode Demo 1](images/image1.png)
-![WinkCode Demo 2](images/image2.png)
-![WinkCode Demo 3](images/image3.png)
+![WinkCode Demo 1](images/image1.png) ![WinkCode Demo 2](images/image2.png)
 
 ## Features
 
@@ -62,7 +60,7 @@ You can adjust various parameters in the `constants.py` file to fine-tune the sy
 
 ## Performance
 
-We've conducted tests to measure the accuracy of the system using Levenshtein distance. The results are available in the attached CSV file. However, this was not measured extensively.
+I've conducted tests to measure the accuracy of the system using the Levenshtein distance. The results are available in the attached CSV file. However, this was not measured extensively.
 
 ## Contributing
 
