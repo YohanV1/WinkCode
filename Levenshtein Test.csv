@@ -1,0 +1,16 @@
+Video,Message,Decoded,Length of Original Message,Length of Decoded Message,Levenshtein Distance,Accuracy %
+1.mov,hello,hillo,5,5,1,80
+2.mov,start,start,5,5,0,100
+3.mov,help,hell,4,4,1,75
+4.mov,kite,rite,4,4,1,75
+5.mov,army,army,4,4,0,100
+6.mov,laugh,lauph,5,5,1,80
+7.mov,use,vse,3,3,1,66.6
+8.mov,ready,reaty,5,5,1,80
+9.mov,goal,gool,4,4,1,75
+10.mov,meet,meet,4,4,0,100
+11.mov,no,o,2,1,1,50
+12.mov,gun,guo,3,3,1,66.6
+13.mov,glad,glad,4,4,0,100
+14.mov,brave,braze,5,5,1,80
+15.mov,fast,fat,4,3,1,75
